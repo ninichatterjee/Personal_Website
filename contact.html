@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ditthi Chatterjee</title>
+    <title>Contact - Devanshi Chatterjee</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Internal CSS for form-specific styles -->
     <style>
@@ -63,122 +63,90 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
 
-    <div class="container">
-        <section class="contact-section">
-            <h2 class="section-title">Contact Information</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:dchatterjee@upei.ca">dchatterjee@upei.ca</a>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Charlottetown, Prince Edward Island, Canada</span>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-link"></i>
-                        <div class="social-links">
-                            <a href="https://github.com/ninichatterjee" target="_blank">GitHub</a>
-                            <a href="https://www.linkedin.com/in/ditthi-chatterjee" target="_blank">LinkedIn</a>
-                        </div>
-                    </div>
+    <main class="contact-section">
+        <h1 class="contact-title">Contact Information</h1>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><a href="mailto:dchatterjee16194@upei.ca">dchatterjee16194@upei.ca</a></p>
+                <p>Charlottetown, Prince Edward Island, Canada</p>
+                
+                <div class="contact-social">
+                    <a href="https://github.com/ninichatterjee" target="_blank">
+                        <img src="images/github.png" alt="GitHub">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/ditthi-chatterjee" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
+        </div>
 
-            <div class="contact-form">
-                <h3>Send Me a Message</h3>
-                <form action="mailto:dchatterjee@upei.ca" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+        <div class="contact-card">
+            <h2>Send Me a Message</h2>
+            <form action="https://formspree.io/f/mdkaqajo" method="POST" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email">Email <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
-                    </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                </div>
 
-                    <div class="form-group">
-                        <label>Preferred Mode of Communication (Select all that apply) <span class="required">*</span></label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="comm-preference" value="email" required>
-                                Email
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="comm-preference" value="phone" required>
-                                Phone Call
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="comm-preference" value="linkedin" required>
-                                LinkedIn Message
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="general">General Inquiry</option>
-                            <option value="project">Project Collaboration</option>
-                            <option value="opportunity">Job Opportunity</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Your Role <span class="required">*</span></label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="radio" name="role" value="recruiter" required>
-                                Recruiter
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="role" value="student" required>
-                                Student
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="role" value="professor" required>
-                                Professor
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="radio" name="role" value="colleague" required>
-                                Colleague
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="subscribe" value="yes">
-                            Keep me updated on your future projects
+                <div class="form-group">
+                    <label>Preferred Mode of Communication <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="communication[]" value="email"> Email
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="communication[]" value="phone"> Phone Call
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="communication[]" value="linkedin"> LinkedIn Message
                         </label>
                     </div>
+                </div>
 
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="opportunity">Job Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/contact.js"></script>
+    <script src="js/page-transition.js"></script>
 </body>
 </html>
