@@ -1,10 +1,6 @@
 # Personal Portfolio Website
 
-<<<<<<< HEAD
-A responsive personal portfolio website showcasing my skills, projects, and professional journey. Built with HTML and CSS, this website serves as a dynamic representation of my growth as a developer and student.
-=======
 A responsive personal portfolio website showcasing my skills, projects, and professional journey. Built with HTML, CSS, and JavaScript, this website serves as a dynamic representation of my growth as a developer and student.
->>>>>>> 29d5816 (Updated styles, form functionality and transitions)
 
 🔗 [View My Website](https://ninichatterjee.github.io/Personal_Website/index.html)
 
