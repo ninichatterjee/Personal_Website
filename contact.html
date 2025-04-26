@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ditthi Chatterjee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Internal CSS for form-specific styles -->
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4B0082;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .required {
+            color: #ff9ecd;
+        }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .checkbox-label input[type="radio"],
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        input[type="tel"]::placeholder {
+            color: #999;
+        }
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contact-section">
+        <h1 class="contact-title">Contact Information</h1>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><a href="mailto:dchatterjee16194@upei.ca">dchatterjee16194@upei.ca</a></p>
+                <p>Charlottetown, Prince Edward Island, Canada</p>
+                
+                <div class="contact-social">
+                    <a href="https://github.com/ninichatterjee" target="_blank">
+                        <img src="images/github.png" alt="GitHub">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/ditthi-chatterjee" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h2>Send Me a Message</h2>
+            <form action="https://github.us16.list-manage.com/subscribe/post?u=cda37afb3c3fc4b793cbd190e&amp;id=cc9c7a87dd&amp;f_id=00dbb9e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate>
+                <div class="form-group">
+                    <label for="mce-FNAME">Name <span class="required">*</span></label>
+                    <input type="text" name="FNAME" class="required" id="mce-FNAME" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mce-EMAIL">Email <span class="required">*</span></label>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mce-PHONE">Phone Number</label>
+                    <input type="tel" name="PHONE" id="mce-PHONE" pattern="[0-9]{10}" placeholder="1234567890">
+                </div>
+                
+                <div class="form-group" id="linkedin-url-field">
+                    <label for="mce-MMERGE9">LinkedIn URL</label>
+                    <input type="url" name="MMERGE9" class="url" id="mce-MMERGE9">
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Mode of Communication <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="group[5860][1]" id="mce-group[5860]-5860-0" value="1"> Email
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="group[5860][2]" id="mce-group[5860]-5860-1" value="2"> Phone Call
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="group[5860][4]" id="mce-group[5860]-5860-2" value="4"> LinkedIn Message
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mce-MMERGE7">Subject <span class="required">*</span></label>
+                    <select name="MMERGE7" class="required" id="mce-MMERGE7" required>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Project Collaboration">Project Collaboration</option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mce-MMERGE8">Message <span class="required">*</span></label>
+                    <textarea name="MMERGE8" class="required" id="mce-MMERGE8" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mce-COMPANY">Company</label>
+                    <input type="text" name="COMPANY" class="text" id="mce-COMPANY">
+                </div>
+                
+                <!-- Real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_cda37afb3c3fc4b793cbd190e_cc9c7a87dd" tabindex="-1" value="">
+                </div>
+                
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/mailchimp-form.js"></script>
+    <script src="js/page-transition.js"></script>
+</body>
+</html>
